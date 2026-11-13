@@ -1,4 +1,5 @@
 
+
 import './App.css';
 
 function App() {
@@ -74,7 +75,8 @@ function App() {
                 Assistente inteligente para conversas,
                 respostas e automações.
               </p>
-              <a href="#sobre">Explorar recurso →</a>
+
+              <a href="/ia">Explorar recurso →</a>
             </article>
 
             <article className="service-card">
@@ -110,7 +112,9 @@ function App() {
       </main>
 
       <footer className="footer">
-        <a href="#inicio" className="logo">NEXORA<span>.</span></a>
+        <a href="#inicio" className="logo">
+          NEXORA<span>.</span>
+        </a>
         <p>© 2026 Nexora. Projeto em desenvolvimento.</p>
       </footer>
     </div>

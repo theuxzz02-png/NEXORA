@@ -1,10 +1,19 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-)
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App.jsx';
+import ChatIA from './pages/ChatIA.jsx';
+import './index.css';
+
+const caminho = window.location.pathname;
+
+const Pagina = caminho === '/ia' || caminho === '/ia/'
+  ? ChatIA
+  : App;
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <Pagina />
+  </React.StrictMode>
+);
+
